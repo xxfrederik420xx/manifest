@@ -1,0 +1,7 @@
+id: timesheet
+name: Timesheet
+version: "1.0.0"
+invio: ">=0.1.0"
+html:
+  path: Timesheet  
+  url: https://example.com/clean-lines/index.html
