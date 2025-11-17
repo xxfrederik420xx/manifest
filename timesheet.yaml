@@ -3,5 +3,5 @@ name: Timesheet
 version: "1.0.0"
 invio: ">=0.1.0"
 html:
-  path: Timesheet  
+  path: timesheet.html  
   url: https://github.com/xxfrederik420xx/manifest/blob/main/timesheet.html
