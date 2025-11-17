@@ -4,4 +4,4 @@ version: "1.0.0"
 invio: ">=0.1.0"
 html:
   path: timesheet.html  
-  url: https://raw.github.com/xxfrederik420xx/manifest/blob/main/timesheet.html
+  url: https://raw.githubusercontent.com/xxfrederik420xx/manifest/refs/heads/main/timesheet.html
