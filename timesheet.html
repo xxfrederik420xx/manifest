@@ -365,16 +365,12 @@
       <div class="notes-content">{{notes}}</div>
     </div>
     {{/notes}}
-
-
     <div class="items-section">
       <table class="items-table">
         <thead>
           <tr>
             <th>Description</th>
             <th>Qty</th>
-            <th>Rate</th>
-            <th>Amount</th>
           </tr>
         </thead>
         <tbody>
@@ -391,51 +387,4 @@
           {{/items}}
         </tbody>
       </table>
-    </div>
-
-    <div class="totals-section">
-      <div class="totals-row subtotal">
-        <span>Subtotal</span>
-        <span>{{currency}} {{subtotal}}</span>
-      </div>
-      {{#hasDiscount}}
-      <div class="totals-row">
-        <span>Discount
-          {{#discountPercentage}}({{discountPercentage}}%){{/discountPercentage}}</span>
-        <span>-{{currency}} {{discountAmount}}</span>
-      </div>
-      {{/hasDiscount}} {{#hasTax}}
-      <div class="totals-row">
-        <span>Tax ({{taxRate}}%)</span>
-        <span>{{currency}} {{taxAmount}}</span>
-      </div>
-      {{/hasTax}} {{#hasTaxSummary}}
-      <div class="totals-row" style="display:block; padding-top:4px;">
-        <div style="font-weight:600; color:var(--text-medium); margin-bottom:2px; font-size:12px;">Tax Summary</div>
-        <div>
-          <table style="width:100%; font-size:11px; border-collapse:collapse;">
-            <thead>
-              <tr>
-                <th style="text-align:left; color:var(--text-light); font-weight:500;">Tax</th>
-                <th style="text-align:right; color:var(--text-light); font-weight:500;">Taxable</th>
-                <th style="text-align:right; color:var(--text-light); font-weight:500;">Tax Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              {{#taxSummary}}
-              <tr>
-                <td style="padding:2px 0;">{{label}}</td>
-                <td style="text-align:right; padding:2px 0;">{{currency}} {{taxable}}</td>
-                <td style="text-align:right; padding:2px 0;">{{currency}} {{amount}}</td>
-              </tr>
-              {{/taxSummary}}
-            </tbody>
-          </table>
-        </div>
-      </div>
-      {{/hasTaxSummary}}
-      <div class="totals-row total">
-        <span>Total</span>
-        <span>{{currency}} {{total}}</span>
-      </div>
     </div>
